@@ -1,7 +1,74 @@
+import { logo, iconClose, iconHamburger } from "../images";
+import { links } from "../constants";
+import { useState } from "react";
 
 function Nav() {
+
+    const [ toggle, setToggle ] = useState(false);
+
     return(
-        <h1>Nav</h1>
+
+        <nav className="flex items-center justify-between">
+
+            <img src={logo} alt="logo" />
+
+            <ul className="hidden sm:flex items-center justify-center gap-10">
+
+                {links.map((link) => (
+
+                    <li key={link.id}>
+
+                        <a href="#" className="text-white font-josefinSans font-josefinSansLight">{link.link}</a>
+
+                    </li>
+
+                ))}
+
+            </ul>
+
+            <div className="sm:hidden block">
+
+                <img 
+                    src={iconHamburger} 
+                    alt="Hamburger"
+                    className="cursor-pointer w-[40px]"
+                    onClick={() => setToggle((prev) => !prev)}
+                />
+
+                <div className={`${toggle ? 'block' : 'hidden'} fixed top-0 right-0 w-full h-screen bg-black px-[15px] xs:px-[40px] pt-[50px]`}>
+
+                    <div className="flex items-center justify-between mb-[50px] xs:mb-[100px]">
+
+                        <img src={logo} alt="logo" className="cursor-pointer w-[160px] xs:w-auto" />
+
+                        <img 
+                            src={iconClose} 
+                            alt="icon close" className="cursor-pointer w-[30px] xs:w-[40px]"
+                            onClick={() => setToggle((prev) => !prev)}
+                        />
+
+                    </div>
+
+                    <ul className="flex flex-col items-start justify-center gap-[25px]">
+
+                        {links.map((link) => (
+
+                            <li key={link.id}>
+
+                                <a href="#" className="text-white text-[30px] xs:text-[35px] uppercase font-josefinSans font-josefinSansLight">{link.link}</a>
+
+                            </li>
+
+                        ))}
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
     )
 }
 

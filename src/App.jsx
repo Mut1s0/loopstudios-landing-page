@@ -6,7 +6,7 @@ function App() {
 
     <main>
 
-      <header>
+      <header className="min-h-[100vh] xs:min-h-[97vh] sm:min-h-[90vh]">
 
         <Nav />
         <Hero />
@@ -25,7 +25,7 @@ function App() {
         <Footer />
 
       </footer>
-      
+
     </main>
     
   )
