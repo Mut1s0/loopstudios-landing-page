@@ -27,42 +27,50 @@ export const creations = [
     {
         id: "creations-1",
         desktopIcon: desktopDeepEarth,
-        mobileIcon: mobileDeepEarth
+        mobileIcon: mobileDeepEarth,
+        title: "deep earth"
     },
     {
         id: "creations-2",
         desktopIcon: desktopNightArcade,
-        mobileIcon: mobileNightArcade
+        mobileIcon: mobileNightArcade,
+        title: "night arcade"
     },
     {
         id: "creations-3",
         desktopIcon: desktopSoccerTeam,
-        mobileIcon: mobileSoccerTeam
+        mobileIcon: mobileSoccerTeam,
+        title: "soccer team vr"
     },
     {
         id: "creations-4",
         desktopIcon: desktopGrid,
-        mobileIcon: mobileGrid
+        mobileIcon: mobileGrid,
+        title: "the grid"
     },
     {
         id: "creations-5",
         desktopIcon: desktopFromAbove,
-        mobileIcon: mobileFromAbove
+        mobileIcon: mobileFromAbove,
+        title: "from up above vr"
     },
     {
         id: "creations-6",
         desktopIcon: desktopPocketBorealis,
-        mobileIcon: mobilePocketBorealis
+        mobileIcon: mobilePocketBorealis,
+        title: "pocket borealis"
     },
     {
         id: "creations-7",
         desktopIcon: desktopCuriosity,
-        mobileIcon: mobileCuriosity
+        mobileIcon: mobileCuriosity,
+        title: "the curiosity"
     },
     {
         id: "creations-8",
         desktopIcon: desktopFisheye,
-        mobileIcon: mobileFisheye
+        mobileIcon: mobileFisheye,
+        title: "make it fisheye"
     },
 ]
 
