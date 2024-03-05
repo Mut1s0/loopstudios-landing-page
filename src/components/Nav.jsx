@@ -8,7 +8,7 @@ function Nav() {
 
     return(
 
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between w-[1500px] max-w-[90%] mx-auto py-[70px]">
 
             <img src={logo} alt="logo" />
 
@@ -18,7 +18,7 @@ function Nav() {
 
                     <li key={link.id}>
 
-                        <a href="#" className="text-white font-josefinSans font-josefinSansLight">{link.link}</a>
+                        <a href="#" className="text-white font-alata font-alataRegular">{link.link}</a>
 
                     </li>
 
@@ -55,7 +55,7 @@ function Nav() {
 
                             <li key={link.id}>
 
-                                <a href="#" className="text-white text-[30px] xs:text-[35px] uppercase font-josefinSans font-josefinSansLight">{link.link}</a>
+                                <a href="#" className="text-white text-[30px] xs:text-[35px] uppercase font-alata font-alataRegular">{link.link}</a>
 
                             </li>
 
