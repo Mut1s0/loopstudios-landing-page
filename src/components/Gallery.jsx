@@ -11,7 +11,7 @@ function Gallery() {
                 <div className="flex items-center justify-center md:justify-between pb-[50px]">
 
                     <h1 className="uppercase text-black font-josefinSans text-[30px] xs:text-[40px]">our creations</h1>
-                    <span className="hidden md:flex border-2 border-black uppercase text-black py-[5px] px-[30px] cursor-pointer font-alata font-alataRegular">see all</span>
+                    <span className="hidden md:flex border-2 border-black uppercase text-black py-[5px] px-[30px] cursor-pointer font-alata font-alataRegular hover:bg-black hover:text-white">see all</span>
 
                 </div>
 
@@ -19,12 +19,12 @@ function Gallery() {
 
                     {creations.map((gallery) => (
 
-                        <div key={gallery.id} className="relative">
+                        <div key={gallery.id} className="relative cursor-pointer">
 
                             <picture>
 
                                 <source media="(min-width: 1024px)" srcSet={gallery.desktopIcon} />
-                                <img src={gallery.mobileIcon} alt="Gallery" className="w-full" />
+                                <img src={gallery.mobileIcon} alt="Gallery" className="w-full hover:opacity-40" />
 
                             </picture>
 
@@ -38,7 +38,7 @@ function Gallery() {
 
                 <div className="flex items-center justify-center py-[50px]">
 
-                    <span className="flex md:hidden border-2 border-black uppercase text-black py-[5px] px-[30px] cursor-pointer font-alata font-alataRegular">see all</span>
+                    <span className="flex md:hidden border-2 border-black uppercase text-black py-[5px] px-[30px] cursor-pointer font-alata font-alataRegular hover:bg-black hover:text-white">see all</span>
 
                 </div>
 

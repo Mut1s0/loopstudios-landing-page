@@ -19,7 +19,7 @@ function Footer() {
 
                             <li key={link.id}>
 
-                                <a href="#" className="text-white">{link.link}</a>
+                                <a href="#" className="text-white hover:border-b-2 hover:border-b-white pb-1">{link.link}</a>
 
                             </li>
 
@@ -37,7 +37,7 @@ function Footer() {
 
                             <li key={social.id}>
 
-                                <img src={social.icon} alt="" className="cursor-pointer" />
+                                <img src={social.icon} alt="" className="cursor-pointer hover:border-b-4 hover:border-b-white pb-2" />
 
                             </li>
 

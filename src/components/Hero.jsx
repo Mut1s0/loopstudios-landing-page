@@ -7,7 +7,7 @@ function Hero() {
 
             <div className="border-2 border-white w-[750px] max-w-[100%] pl-[20px] py-[30px]">
 
-                <h1 className="uppercase text-white text-[34px] xs:text-[44px] sm:text-[80px] md:text-[100px] font-josefinSans font-josefinSansLight md:leading-[100px]">immersive experiences that deliver</h1>
+                <h1 className="uppercase text-white text-[34px] xs:text-[44px] sm:text-[80px] font-josefinSans font-josefinSansLight md:leading-[100px]">immersive experiences that deliver</h1>
 
             </div>
 

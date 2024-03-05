@@ -18,7 +18,7 @@ function Nav() {
 
                     <li key={link.id}>
 
-                        <a href="#" className="text-white font-alata font-alataRegular">{link.link}</a>
+                        <a href="#" className="text-white font-alata font-alataRegular hover:border-b-2 hover:border-b-white pb-1">{link.link}</a>
 
                     </li>
 
@@ -35,7 +35,7 @@ function Nav() {
                     onClick={() => setToggle((prev) => !prev)}
                 />
 
-                <div className={`${toggle ? 'block' : 'hidden'} fixed top-0 right-0 w-full h-screen bg-black px-[15px] xs:px-[40px] pt-[50px]`}>
+                <div className={`${toggle ? 'fixed' : 'hidden'} fixed top-0 right-0 w-full h-screen bg-black px-[15px] xs:px-[40px] pt-[50px] z-20`}>
 
                     <div className="flex items-center justify-between mb-[50px] xs:mb-[100px]">
 
